@@ -1,12 +1,14 @@
 
 import './App.css';
+import Search from "./Search"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         
-       <h1>Dictionary World</h1>
+        <h1>The WordBook</h1>
+        <Search/>
       
       </header>
     </div>
