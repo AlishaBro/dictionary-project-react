@@ -11,8 +11,9 @@ export default function Results(props) {
             <div className="Results">
                 <h3 className="text-start">{props.results.word}</h3>
                 {props.results.meanings.map(function (meaning, index) { 
-                    return (<div key={index }><Meaning meaning={meaning}/></div>)
-                    
+                
+                        return (<div key={index}><Meaning meaning={meaning} /></div>)
+                  
                 })}
               
             </div>
