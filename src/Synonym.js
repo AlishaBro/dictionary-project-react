@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function Synonym(props) {
-    console.log(props.synonym);
+   
     
     if (props.synonym.length>0) {
         return (

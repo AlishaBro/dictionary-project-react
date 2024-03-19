@@ -15,9 +15,11 @@ export default function Search() {
 
     function handleSubmit(event) {
         event.preventDefault();
-       
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
-        axios.get(apiUrl).then(handleResponse);
+        if (word) {
+            let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+            axios.get(apiUrl).then(handleResponse);
+        } else {return null }
+        
 
     }
 
