@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCirclePlay,faVolumeHigh} from '@fortawesome/free-solid-svg-icons';
+import {faVolumeHigh} from '@fortawesome/free-solid-svg-icons';
 import { Howl } from "howler";
 // import sound from "./assets/run-us.mp3"
 
