@@ -12,10 +12,10 @@ export default function Phonetics(props) {
                  
                 return (
                     <div key={index}>
-                        <Audio audio={phonetic.audio}/>
-                        {/* <a href={phonetic.audio}><FontAwesomeIcon icon={faCirclePlay}  /></a> */}
+                        <Audio audio={phonetic.audio}/><span>{" "}{phonetic.text}</span>
+                       
                     
-                        {" "}{phonetic.text}
+                        
                    
                     
                     </div>)

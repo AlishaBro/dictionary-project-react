@@ -18,10 +18,10 @@ export default function Audio(props) {
         sound.play();
      }
     
-    return (<div className="Audio">
+    return (<span className="Audio">
       
           <a href="#" onClick={play} ><FontAwesomeIcon icon={faCirclePlay} /></a>
    
-    </div>)
+    </span>)
 
 }
