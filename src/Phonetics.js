@@ -1,6 +1,4 @@
-import React, {useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
+import React from "react";
 import Audio from "./Audio"
 
 export default function Phonetics(props) {
@@ -13,11 +11,7 @@ export default function Phonetics(props) {
                 return (
                     <div key={index}>
                         <Audio audio={phonetic.audio}/><span>{" "}{phonetic.text}</span>
-                       
-                    
-                        
-                   
-                    
+     
                     </div>)
             } else { return (null)}
 
