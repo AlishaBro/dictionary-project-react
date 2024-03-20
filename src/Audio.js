@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCirclePlay} from '@fortawesome/free-regular-svg-icons';
+import {faCirclePlay,faVolumeHigh} from '@fortawesome/free-solid-svg-icons';
 import { Howl } from "howler";
 // import sound from "./assets/run-us.mp3"
 
@@ -19,7 +19,7 @@ export default function Audio(props) {
     return (<span className="Audio">
       
         {/* <a href={props.audio} onClick={play}><FontAwesomeIcon icon={faCirclePlay} /></a> */}
-        <button className="border-light" onClick={play}><FontAwesomeIcon icon={faCirclePlay} /></button>
+        <button className="border-light" onClick={play}><FontAwesomeIcon icon={faVolumeHigh} size="1x" beat/></button>
    
     </span>)
 

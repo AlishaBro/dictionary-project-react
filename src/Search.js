@@ -31,11 +31,24 @@ export default function Search() {
 
     return (<div className="Search">
         <div className="Container">
+            <div className="section shadow">
             <form onSubmit={handleSubmit}>
-                <input type="search" autoFocus={true} placeholder="Enter the Word" onChange={handleChange}/>
-                <button type="submit">Submit</button>
+                <div className="row">
+                    <div className="col-10">
+                    <input type="search" autoFocus={true} placeholder="  Enter the Word..." onChange={handleChange}/>
+                    </div>
+                    <div className="col-2">
+                    <button  type="submit">Submit</button>
+                    </div>
+                </div>
+                
+                
             </form>
-            <Results results={results}/>
+                <div className="ExampleWords">Example: Light,Snow,Expectation,Falling etc..</div>
+            </div>
+           
+                <Results results={results} />
+               
         </div>
 
     </div>);

@@ -1,0 +1,26 @@
+.Synonym{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.Synonym .synms{
+    margin-bottom: 30px;
+    margin: 20px;
+    font-weight: 600px;
+  
+}
+
+li{
+    border: 1px solid #597467;
+    /* padding:5px; */
+    border-radius: 15px;
+            padding: 5px 12px;
+
+}

@@ -1,9 +1,14 @@
 .App {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .App-header{
   margin-top: 30px;
+}
+
+body{
+  background-color: rgb(210, 219, 205)
 }
 
 
