@@ -16,11 +16,7 @@ export default function Search(props) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        if (word) {
-            let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
-            axios.get(apiUrl).then(handleResponse);
-        } else {return null }
-        
+        CallApi();
 
     }
 
@@ -30,10 +26,15 @@ export default function Search(props) {
 
     }
 
-    function CallApi() { 
-         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${props.defaultKeyword}`;
-        axios.get(apiUrl).then(handleResponse);
+    function load() { 
         setLoaded(true);
+        CallApi();
+    }
+
+    function CallApi() { 
+         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+        axios.get(apiUrl).then(handleResponse);
+       
     }
 
 
@@ -54,7 +55,7 @@ export default function Search(props) {
                 
                 
                     </form>
-                    <div className="ExampleWords">Example: Light,Snow,Expectation,Falling etc..</div>
+                    <div className="ExampleWords">Suggested: Light,Snow,Expectation,Falling etc..</div>
                 </div>
            
                 <Results results={results} />
@@ -63,6 +64,7 @@ export default function Search(props) {
 
         </div>)
     } else {
-        CallApi();
+       
+        load();
      }
 }

@@ -1,14 +1,21 @@
 .App {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .App-header{
   margin-top: 30px;
+  color: rgb(54, 54, 56);
+}
+
+.App h1{
+  font-weight: bold;
+  color: rgb(99, 103, 140);
 }
 
 body{
-  background-color: rgb(244, 247, 243)
+  /* background-color: rgb(245, 245, 251) */
+  background-color: #FFFFFF;
 }
 
 
