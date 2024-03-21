@@ -10,12 +10,13 @@ export default function Synonym(props) {
             <div className="Synonym">
 
                 <strong className="synms">Synonyms:</strong>
-                
+            <div className="synonymList">
             {props.synonym.map(function (synonym, index) {
                 return (<ul key={index}>
                     <li>{synonym}</li>
                      </ul>)
             })}
+                    </div>  
             
             </div>
         )

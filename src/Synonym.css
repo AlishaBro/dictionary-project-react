@@ -8,6 +8,7 @@ ul{
     margin: 0;
     padding: 5px;
     display: inline-block;
+    
 }
 
 .Synonym .synms{
@@ -22,5 +23,11 @@ li{
     /* padding:5px; */
     border-radius: 15px;
             padding: 5px 12px;
+          
 
+}
+
+.synonymList{
+    margin-left: 15px;
+    margin-top: 10px;
 }
