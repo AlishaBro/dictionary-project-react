@@ -9,10 +9,10 @@
 
 
 .Search .section{
-    padding: 10px;
-   
-    border: 1px solid #ddd;
-    background-color: rgb(245, 245, 249);
+  padding: 10px;
+  border: 1px solid #ddd;
+    background-color: rgb(70, 81, 70);
+ 
    padding-top: 10px;
    width: 800px;
    margin: auto;
@@ -29,6 +29,10 @@
     border-radius: 6px;
     margin-left: 20px;
     padding-left: 15px;
+background-color: rgb(239, 232, 236);
+
+/* background-color: rgb(225, 159, 197); */
+    
 }
 
 .Search button{

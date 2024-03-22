@@ -5,17 +5,20 @@
 
 .App-header{
   margin-top: 30px;
-  color: rgb(54, 54, 56);
+  color: rgb(247, 249, 247);
 }
 
 .App h1{
   font-weight: bold;
-  color: rgb(99, 103, 140);
+  color: rgb(243, 244, 248);
+  
 }
 
 body{
   /* background-color: rgb(245, 245, 251) */
-  background-color: #f4f5f6;
+  /* background-color: #e1eeeb; */
+  background-color: rgb(27, 28, 26);
+    /* background-color: rgb(232, 141, 192); */
 }
 
 

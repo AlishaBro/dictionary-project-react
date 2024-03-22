@@ -1,4 +1,9 @@
 .img-fluid{
-    margin-bottom: 15px;
+   padding: 10px;
+   border-radius: 19px;
    
+}
+
+.Images .section{
+    padding: 20px;
 }

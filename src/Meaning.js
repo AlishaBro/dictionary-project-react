@@ -10,7 +10,7 @@ export default function Meaning(props) {
 
     return (
         <div className="Meaning">
-            <div className="section shadow">
+            <div className="section">
             <h5 className="partofspeech">{props.meaning.partOfSpeech}</h5>
             {props.meaning.definitions.map(function (definition, index) {
                 if (index < 3) { 

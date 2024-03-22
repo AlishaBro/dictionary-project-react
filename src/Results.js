@@ -11,7 +11,7 @@ export default function Results(props) {
        
         return (
             <div className="Results">
-                <div className="section shadow">
+                <div className="section">
                 <h3 className="Keyword">{props.results.word}</h3>
                     <div><Phonetics phonetics={props.results.phonetics} /></div>
                     </div>

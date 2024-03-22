@@ -19,7 +19,7 @@ export default function Audio(props) {
     return (<span className="Audio">
       
       
-        <button className="border-light" onClick={play}><FontAwesomeIcon icon={faVolumeHigh} size="1x" beat style={{color: "#727374",}}/></button>
+        <button className="border-light" onClick={play}><FontAwesomeIcon icon={faVolumeHigh} size="1x" beat style={{color: "white",}}/></button>
    
     </span>)
 
