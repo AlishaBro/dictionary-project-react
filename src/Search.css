@@ -40,7 +40,7 @@ background-color: rgb(239, 232, 236);
             background-color: rgba(51, 67, 119, 0.05);
             border-radius: 8px;
             border-width: 0;
-            color: #464343;
+            color: #c3c9c7;
             cursor: pointer;
             display: inline-block;
             font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,7 +51,7 @@ background-color: rgb(239, 232, 236);
             padding: 10px 12px;
             text-align: center;
             transition: all 200ms;
-           
+            border:1px solid #c3c9c7 ;
         
 }
 

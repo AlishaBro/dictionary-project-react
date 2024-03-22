@@ -1,8 +1,9 @@
 import React from "react";
-import "./Images.css";
+import "./Images.css"
 
 export default function Images(props) { 
-    if (props.images) {
+    console.log(props.images)
+    if (props.images!=null && props.images.length>0) {
         return (
         <div className="Images">
             <div className="section shadow">
@@ -11,7 +12,7 @@ export default function Images(props) {
                         return (
                             <div key={index} className="col-4">
                        
-                                <img src={image.src.landscape} alt="" className="img-fluid" />
+                                <img src={image.src.landscape} alt="" className="img-fluid images" />
                    
                             </div>
                         );

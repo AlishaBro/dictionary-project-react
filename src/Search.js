@@ -15,10 +15,11 @@ export default function Search(props) {
 
     function handleDictionaryResponse(response) { 
         setResults(response.data[0])
+        setMessage(null)
     }
 
     function handleImageResponse(response) { 
-        console.log(response.data)
+       
         setImages(response.data.photos)
     }
 
@@ -45,7 +46,9 @@ export default function Search(props) {
     function error(error) {
         if (error.response) {
             console.log(error.response.data);
-            setMessage(error.response.data.title)
+            setMessage(error.response.data.title);
+            setResults(null);
+            setImages(null);
             console.log(error.response.status);
             console.log(error.response.headers);
         } else if (error.reqiest) {
@@ -54,6 +57,7 @@ export default function Search(props) {
             console.log('Error', error.message);
         }
         console.log(error.config);
+
      }
 
 
@@ -65,12 +69,13 @@ export default function Search(props) {
         let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${word}&key=b9ffd1od861e4efaf039d5a0c6fbtecd`;
 
         
-        axios.get(imageApiUrl).then(handleImageResponse);
+        axios.get(imageApiUrl).then(handleImageResponse).catch(error);
        
     }
 
 
     if (loaded) {
+     
 
         return (<div className="Search">
             <div className="Container">
@@ -90,11 +95,13 @@ export default function Search(props) {
                     </form>
                     <div className="ExampleWords">Suggested: Light,Snow,Expectation,Falling etc..</div>
                 </div>
+                  <Results results={results} />
+                <Images images={images}/>
            
-                <Results results={results} />
-               
+                
             </div>
-            <Images images={images}/>
+
+          
 
         </div>)
     } else {

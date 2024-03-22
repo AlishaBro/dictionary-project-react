@@ -6,21 +6,24 @@ import { Howl } from "howler";
 
 export default function Audio(props) {
 
-    console.log(props.audio)
+    if (props.audio) {
+        
+        
 
-    function play(src){
-        const sound = new Howl({
-            src: props.audio,
-            html5:true
-        })
-        sound.play();
-     }
+        function play(src) {
+            const sound = new Howl({
+                src: props.audio,
+                html5: true
+            })
+            sound.play();
+        }
     
-    return (<span className="Audio">
+        return (<span className="Audio">
       
       
-        <button className="border-light" onClick={play}><FontAwesomeIcon icon={faVolumeHigh} size="1x" beat style={{color: "white",}}/></button>
+            <button onClick={play}><FontAwesomeIcon icon={faVolumeHigh} size="1x" beat style={{ color: "white", }} /></button>
    
-    </span>)
+        </span>)
+    } else return (null);
 
 }
