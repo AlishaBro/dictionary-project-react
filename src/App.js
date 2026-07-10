@@ -1,15 +1,12 @@
-
-import './App.css';
-import Search from "./Search"
+import "./App.css";
+import Search from "./Search";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
         <h1>The Dictionary</h1>
-        <Search defaultKeyword={"snow"} />
-      
+        <Search />
       </header>
     </div>
   );
