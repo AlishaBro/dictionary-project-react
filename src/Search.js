@@ -6,7 +6,7 @@ import Results from "./Results";
 export default function Search(props) {
   const [word, setWord] = useState("");
   const [results, setResults] = useState(null);
-  const [loaded, setLoaded] = useState(true);
+  const [loaded] = useState(true);
   /*const [images, setImages] = useState(null);*/
   const [message, setMessage] = useState(null);
 
